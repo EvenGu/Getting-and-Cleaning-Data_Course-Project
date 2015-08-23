@@ -44,3 +44,6 @@ dfMeanStd <- dfMeanStd %>% group_by(SubjectID, Activity)
 cols <- names(dfMeanStd)[-(1:2)]
 dots <- sapply(cols, function(x) substitute(mean(x),list(x=as.name(x))))
 dfGroup <- do.call(summarise,c(list(.data=dfMeanStd),dots))
+
+# Output as text
+write.table(dfGroup, file="projectDF.txt", row.name=FALSE) 
