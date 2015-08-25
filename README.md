@@ -9,4 +9,5 @@
    <li>Appropriately labels the data set with descriptive variable names, <em><strong>by replacing the abbrevations with the full names</strong></em></li>
    <li>Creates a second, independent tidy data set with the average of each variable for each activity and each subject  <em><strong>dfGroup (dim=180x88)</strong></em></li>
  </ol>
+<p><strong>Note: </strong>to run the run_analysis.R, please place the script in the working directory that contains the "UCI HAR Dataset" folder (outside the "UCI HAR Dataset" folder). </p>
 
